@@ -1,9 +1,9 @@
 ---
-title: Network Fundamentals
+title: Cisco Platforms and Development
 layout: default
 ---
 
-## Network Fundamentals
+## Cisco Platforms and Development
 
 - [ ] Sample learning item 1
 - [ ] Sample learning item 2

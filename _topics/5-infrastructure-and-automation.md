@@ -1,9 +1,9 @@
 ---
-title: Network Fundamentals
+title: Infrastructure and Automation
 layout: default
 ---
 
-## Network Fundamentals
+## Infrastructure and Automation
 
 - [ ] Sample learning item 1
 - [ ] Sample learning item 2

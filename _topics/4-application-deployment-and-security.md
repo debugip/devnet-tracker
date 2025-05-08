@@ -1,9 +1,9 @@
 ---
-title: Network Fundamentals
+title: Application Deployment and Security
 layout: default
 ---
 
-## Network Fundamentals
+## Application Deployment and Security
 
 - [ ] Sample learning item 1
 - [ ] Sample learning item 2

@@ -1,9 +1,9 @@
 ---
-title: Network Fundamentals
+title: Understanding and Using APIs
 layout: default
 ---
 
-## Network Fundamentals
+## Understanding and Using APIs
 
 - [ ] Sample learning item 1
 - [ ] Sample learning item 2
