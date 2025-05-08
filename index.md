@@ -7,6 +7,10 @@ title: DevNet 200-901 Learning Tracker
 
 Welcome to my learning blog. I'm preparing for the **Cisco DevNet Associate Exam**, and this site tracks my progress.
 
+## Overall Progress
+
+<div id="overall-progress-bar"></div>
+
 ## Exam Topics
 
 - [Software Development and Design](/devnet-tracker/topics/1-software-development-and-design/)
