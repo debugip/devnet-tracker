@@ -1,9 +1,16 @@
 ---
-title: Understanding and Using APIs
+title: Understanding And Using Apis
 layout: default
 ---
 
-## Understanding and Using APIs
+## Understanding And Using Apis
 
-- [ ] Sample learning item 1
-- [ ] Sample learning item 2
+- [ ] Construct a REST API request from documentation
+- [ ] Common webhook usage patterns
+- [ ] Constraints when consuming APIs
+- [ ] HTTP response codes
+- [ ] Troubleshooting with HTTP codes and docs
+- [ ] HTTP response structure: code, headers, body
+- [ ] Authentication: basic, token, API keys
+- [ ] API styles: REST, RPC, synchronous, asynchronous
+- [ ] Python script calling REST API using requests
