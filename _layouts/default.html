@@ -25,21 +25,35 @@
     {{ content }}
   </main>
   <script>
+    // Enable checkboxes and persist in localStorage
+    const pageKey = location.pathname;
     const main = document.querySelector("main");
     const checkboxes = main.querySelectorAll("input[type='checkbox']");
+    let saved = JSON.parse(localStorage.getItem("progress-" + pageKey) || "[]");
+    checkboxes.forEach((box, i) => {
+      box.disabled = false;
+      box.checked = saved[i] || false;
+      box.addEventListener("change", () => {
+        saved[i] = box.checked;
+        localStorage.setItem("progress-" + pageKey, JSON.stringify(saved));
+        location.reload(); // update progress bar
+      });
+    });
+
+    // Add progress bar
     if (checkboxes.length > 0) {
-      const done = Array.from(checkboxes).filter(i => i.checked).length;
+      const done = saved.filter(Boolean).length;
       const pct = Math.round(done / checkboxes.length * 100);
       const bar = document.createElement("div");
       bar.innerHTML = `<p>Progress: ${pct}%</p><div style='background:#ddd;height:10px'><div style='background:#2ecc71;height:10px;width:${pct}%'></div></div>`;
       main.prepend(bar);
     }
 
+    // Dark mode toggle
     function toggleDarkMode() {
       document.body.classList.toggle("dark");
       localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
     }
-
     if (localStorage.getItem("theme") === "dark") {
       document.body.classList.add("dark");
     }
